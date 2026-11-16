@@ -1,0 +1,12 @@
+# Web framework
+fastapi==0.162.5
+# ASGI server that runs the FastAPI app
+uvicorn==0.54.0
+
+# Database: ORM + PostgreSQL driver
+SQLAlchemy==2.1.8
+psycopg2-binary==2.9.13
+
+# Data validation and settings loaded from .env
+pydantic==2.14.3
+pydantic-settings==2.16.2
