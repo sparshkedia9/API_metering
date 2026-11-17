@@ -15,6 +15,11 @@ class Settings(BaseSettings):
     app_name: str = "API Key and Usage Metering Service"
     database_url: str  # no default: the app refuses to start if it's missing
 
+    # JWT (login token) settings
+    jwt_secret_key: str  # no default: must come from .env, never from code
+    jwt_algorithm: str = "HS256"
+    access_token_expire_minutes: int = 30
+
     # Tell pydantic-settings to also read values from the .env file
     model_config = SettingsConfigDict(env_file=".env")
 

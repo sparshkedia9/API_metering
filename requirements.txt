@@ -10,3 +10,10 @@ psycopg2-binary==2.9.13
 # Data validation and settings loaded from .env
 pydantic==2.14.3
 pydantic-settings==2.16.2
+# Required by Pydantic's EmailStr to validate email addresses
+email-validator==2.4.0
+
+# Security: password hashing (Argon2id)
+pwdlib[argon2]==0.4.2
+# Security: JSON Web Tokens (JWT) for login sessions
+PyJWT==2.15.1
